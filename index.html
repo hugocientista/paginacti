@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+
+	<!-- Grid Classes
+			The Bootstrap grid system has four classes:
+
+			xs (for phones)
+			sm (for tablets)
+			md (for desktops)
+			lg (for larger desktops)
+			The classes above can be combined to create more dynamic and flexible layouts.
+	-->
+
+
+
+	<meta charset="utf-8">
+	<title>Estágiarios IFAL- Login</title>
+	<!-- Para garantir boa prestação de zoom ao toque, já que o Bootstrap é projetado para ser sensível aos dispositivos móveis -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	
+	<!-- Adiciona um icone na aba da pagina -->
+    <link rel="shortcut icon" href="ifal.png" type="image/x-png>
+	
+	<!-- Incluindo o jQuery que é requisito do JavaScript do Bootstrap -->
+	<script src="bootstrap/bootstrap-3.3.6-dist/js/jquery.js" ></script>
+
+	<!-- incluindo o javascript do bootstrap-->
+	<script src="bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	
+	<!-- Incluindo o CSS do Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css" media="screen">
+	
+	<!-- Incluindo o CSS criando por min mesmo -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.3.6-dist/css/style.css">
+
+		
+</head>
+<body>	
+	
+	
+
+			
+	
+	
+<div class="container-fluid">
+	
+		<div class="row">
+	
+			
+		
+				<div class="col-xs-12 col-md-12">
+				
+					<img src="ifal2.png" alt="ifal" width="290px" height="100px">
+					<br><br>
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a href="index.html">Login</a></li>
+						<li role="presentation"><a href="index2.html">Cadastro</a></li>
+						<li role="presentation"><a href="quemsomos.html">Quem somos?</a></li>
+					</ul>
+				
+					
+				
+				
+				</div>
+		
+			
+	    </div>
+	
+	
+	<br>
+	
+		<div class="row">
+	
+	
+			<div class="col-xs-12 col-md-12">
+				<header class="h1 text-uppercase text-center" >
+		
+	
+					<strong>Estágiarios</strong> 
+				</header>
+				<div class="cor">
+					<form action="PHP/login.php" method="post" accept-charset="utf-8" class="form-login">
+
+						<h1 class="h1 form-login-heading text-uppercase text-center"> <strong> Entre</strong></h1>
+							<label for="username" class="uname"> Digite seu e-mail: </label>
+							<input id="username" class="form-control" type="email" placeholder="Ex: meuemail@mail.com " name="username" required="required"/>
+					
+							<label for="password" class="passwd" > Digite sua Senha: </label>
+							<input id="password" class="form-control"  type="password" placeholder=" ex: senha1234" name="password" required="required"/> 
+				
+						<div class="checkbox">
+							<label>
+							<input action="page.php" type="checkbox" value="loginkeeping" name="manter" /> 
+							Mantenha-me conectado</label>
+						</div>
+							<input type="submit" class="bt-cor btn-lg btn-success btn-block" value="Login" href="PHP/login.php"> 
+				
+						<p></p>
+	
+						<p class="change_link">
+							Não tem cadastro ?
+							<a href="index2.html">Faça o cadastro</a>
+						</p>
+					</form>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</body>
+</html>

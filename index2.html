@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<meta charset="utf-8">
+	<title>Estágiarios IFAL- Cadastro</title>
+	
+	<!-- Para garantir boa prestação de zoom ao toque, já que o Bootstrap é projetado para ser sensível aos dispositivos móveis -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+	<!-- Adiciona um icone na aba da pagina -->
+    <link rel="shortcut icon" href="ifal.png" type="image/x-png>
+	
+	<!-- Incluindo o jQuery que é requisito do JavaScript do Bootstrap -->
+	<script src="bootstrap/bootstrap-3.3.6-dist/js/jquery.js" ></script>
+
+	<!-- incluindo o javascript do bootstrap-->
+	<script src="bootstrap/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	
+	
+	<!-- Incluindo o CSS do Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/bootstrap-3.3.6-dist/css/bootstrap.min.css" media="screen">
+	
+	<!-- Incluindo o CSS criando por min mesmo -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-3.3.6-dist/css/style.css">
+
+	
+	
+</head>
+<body>
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+	
+		<div class="col-xs-12 col-md-12">
+				
+			<img src="ifal2.png" alt="ifal" width="290px" height="100px">
+			<br><br>
+			
+			<ul class="nav nav-pills">
+				<li role="presentation"><a href="index.html">Login</a></li>
+				<li role="presentation" class="active"><a href="index2.html">Cadastro</a></li>
+				<li role="presentation"><a href="quemsomos.html">Quem somos?</a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+	
+		<br>
+		<div class="row content">
+		
+			
+			<div class="col-xs-12 col-md-12">
+		
+				<header class="h1 text-uppercase text-center" >
+					<strong>Estágiarios</strong> 
+				</header>
+				<div class="cor">
+					<form action="PHP/cadastro.php" method="post" accept-charset="utf-8" class="form-login">
+
+						<h1 class="h1 form-login-heading text-uppercase text-center"> <strong> Cadastro</strong></h1>
+					
+							<label for="username">Nome do Estagiário </label>
+							<input id="username" class="form-control" required="required" type="text" placeholder="Ex: José" name="nome" />
+					
+										
+							<p></p>
+					
+							<label for="useremail">Digite seu email </label>
+							<p></p>
+							<input id="useremail" class="form-control" type="email" placeholder="Ex: meuemail@mail.com" name="useremail" required="required" /> 
+							<p></p>
+					 
+							<label for="psw" class="password" >Digite sua senha </label>
+							<p></p>
+							<input id="psw" class="form-control" name="psw" required="required" type="password" placeholder="Ex: senha123"/>
+							<p></p>
+                     
+							<label for="password_confirm" class="password">Por favor confirme sua senha</label>
+							<p></p>
+							<input id="password_confirm" class="form-control" name="password_confirm" required="required" type="password" placeholder="Reescreva sua semha!"/>
+							<p></p>
+                    
+							<input type="submit" class=" bt-cor btn-lg btn-success btn-block " value="Cadastro" href="PHP/cadastro.php"/>
+							
+							
+					
+				
+						<p></p>
+
+						<p class="change_link">
+							Já possui uma conta 
+							<a href="index.html">Faça o Login</a>
+						</p>
+						
+					</form>
+				</div>
+	        </div>
+		
+		</div>	
+		
+		
+		
+</div>
+	
+
+	
+	
+</body>
+</html>
